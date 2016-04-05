@@ -1,0 +1,90 @@
+/*Flexbox*/ 
+#menu {background-color:#607d8b;}
+#busca
+{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items:center;
+
+    color: #aaa;
+    font-size:1em;
+    padding: 5pt 0pt 5pt 5pt;
+    position: relative;
+    width: 96%;
+}
+
+#busca input {
+  width:100%;   
+  height: 32px;
+  text-indent: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+#busca .fa-search { 
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/*Botões do Menu*/
+nav
+{   
+    color:white;
+    padding:0pt 5pt;
+}
+nav ul 
+{
+    display:flex;
+    align-content:center;         /*flex-start | flex-end | center | space-between | space-around | stretch*/
+    align-items:center;           /*flex-start | flex-end | center | baseline | stretch*/
+    flex-direction: row;           /*row | row-reverse | column | column-reverse*/
+    flex-wrap: wrap;               /*nowrap | wrap | wrap-reverse*/            
+    justify-content: space-between; /*flex-start | flex-end | center | space-between | space-around*/
+       
+}
+nav ul li 
+{
+
+
+}
+nav ul li figure{
+    /*pesquisar: srcset*/
+    margin:10px;
+    max-height: 30px;
+    
+    background-size: contain;
+}
+
+/*Leok: colocar o título dentro do link. O "text-decoration:none;" não tá pegando...*/
+#btn01 figure:after {content: url(../images/icones/icon-infra.png);}
+#btn02 figure:after {content:url(../images/icones/icon-health.png);}
+#btn03 figure:after {content:url(../images/icones/icon-estrada.png);}
+#btn04 figure:after {content:url(../images/icones/icon-education.png);}
+#btn05 figure:after {content:url(../images/icones//icon-education.png);}
+
+
+
+
+
+.menuLateral
+{
+	position: absolute;
+	top: 30px;
+	height: 0px;
+    width: 0px;
+    overflow: hidden;
+	right:100%; 
+	padding:0;
+}
+
+.menuLateral.on
+{
+    width:50%;
+    right:50%;
+    -moz-transition: all 0.3s ease 0s;
+    transition:      all 0.3s ease 0s;
+}	

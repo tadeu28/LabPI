@@ -1,0 +1,9 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Roboto:400,700italic,700");
+
+body{width:360px;} /*só pra forçar o responsivo vertical. Depois faço a versão web*/
+
+a,h1,h2,h3,h4,h5,h6,li,p{
+font-family: "Roboto","Times New Roman", Georgia, Serif;
+}
+nav ul{padding-bottom:5px;}
