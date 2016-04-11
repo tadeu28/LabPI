@@ -1,0 +1,58 @@
+﻿<ion-view view-title="Convênio #{{id}}">
+    <ion-content class="padding">
+        <div>
+            <img src="{{convenio.imagem}}" width="100%">
+        </div>
+        <div class="list">
+
+            <div class="item item-divider">
+                Convênio
+            </div>
+            <a class="item" ng-click="showhide('lblConv')" id="lblConv">
+                <p>Numero Proposta: {{convenio.proposta}}</p>
+                <p>Id: {{convenio.id}}</p>
+            </a>
+            <br/>
+            <div class="item item-divider">
+                Descrição
+            </div>
+            <a class="item " ng-click="showhide('lblDescricao')" id="lblDescricao">
+                <p>{{convenio.descricao}}</p>
+            </a>
+            <br />
+            <div class="item item-divider">
+                Prazo
+            </div>
+            <a class="item " ng-click="showhide('lblPrazo')" id="lblPrazo">
+                <p>Inicio: {{convenio.dtInicio}}</p>
+                <p>Fim: {{convenio.dtPrazo}}</p>
+            </a>
+            <br />
+            <div class="item item-divider">
+                Custos
+            </div>
+            <a class="item " ng-click="showhide('lblCustos')" id="lblCustos">
+                <p>Contribuição do Governo Federal: {{convenio.contribFederal}}</p>
+                <p>Contribuição do Governo Estadual: {{convenio.contribEstadual}}</p>
+                <p>Contribuição do Município: {{convenio.contribMunicipal}}</p>
+                <hr/>
+                <p><strong>Total do Projeto (Global):</strong> {{convenio.totalProjeto}}</p>
+            </a>
+            <br />
+            <div class="item item-divider">
+                Justificativa
+            </div>
+            <a class="item " ng-click="showhide('lblJustificativa')" id="lblJustificativa">
+                <p>{{convenio.justificativa}}</p>
+            </a>
+            <br/>
+            <div class="item item-divider">
+                <p>
+                    <strong>
+                        <a href="#" class="subdued">2 <i class="icon ion-thumbsup"></i></a>
+                        <a href="#" class="subdued">5 <i class="icon ion-chatboxes"></i></a>
+                    </strong>
+                </p>
+            </div>
+    </ion-content>
+</ion-view>

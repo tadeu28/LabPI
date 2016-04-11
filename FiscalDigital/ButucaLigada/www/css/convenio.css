@@ -1,0 +1,110 @@
+﻿[id*="convenio"] {
+    background-size: cover;
+}
+/*Convênio 01 Enchente*/
+#convenioGovSc1352288 {background-image:url(../images/fotos/convenioGovBr1352288-foto001-sm.jpg);}
+/*Convênio 02 Moradia*/
+#convenioGovBr1425823 {background-image:url(../images/fotos/convenioGovBr1425823-foto001-sm.jpg);}
+/*Convênio 03 Esgoto*/
+#convenioGovBr1749781 {background-image:url(../images/fotos/convenioGovBr1749781-foto001-sm.jpg);}
+/*Convênio Saudo*/
+#saudePublica {background-image:url(../images/fotos/conveniosaudePublica.jpg);}
+#educacaoPublica {background-image:url(../images/fotos/convenioeducacaoPublica.jpg);}
+#obrasRodovias {background-image:url(../images/fotos/convenioobrasRodovias.jpg);}
+
+article{
+    
+    margin: 2px 0px;
+    border: solid 0.05px #cfd8dc;
+}
+
+/*http://www.sitepoint.com/easy-responsive-css-grid-layouts/*/
+/*
+<div class="row">
+  <div class="col-1-2"></div>
+  <div class="col-1-2"></div>
+</div><!-- /.row -->
+
+<div class="row">
+  <div class="col-2-3"></div>
+  <div class="col-1-3"></div>
+</div><!-- /.row -->
+
+<div class="row">
+  <div class="col-1-4"></div>
+  <div class="col-1-4"></div>
+  <div class="col-1-4"></div>
+  <div class="col-1-4"></div>
+</div><!-- /.row -->
+
+<div class="row">
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+  <div class="col-1-8"></div>
+</div><!-- /.row -->
+
+*/
+
+/* grid */
+a {
+	text-decoration: none
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding: 10px;
+  width: 100%;
+}
+/* 
+@media all and ( min-width: 600px ) {
+
+  set col widths 
+  .col-2-3 {
+    width: 66.66%;
+  }
+  .col-1-2 {
+    width: 50%;
+  }
+  .col-1-3 {
+    width: 33.33%;
+  }
+  .col-1-4 {
+    width: 25%;
+  }
+  .col-1-8 {
+    width: 12.5%;
+  }
+}
+
+*/
+article h2 {
+    font-size:xx-large;
+  }
+article span {
+    display:flex;
+
+}
+article figure {padding-right:5px;}
+
+article h2, article p {
+    color: white;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px black, 
+    2px 1px 1px #ccc, 1px 2px 1px #37474f,
+    3px 2px 1px #ccc, 2px 3px 1px #37474f;
+}
+.icon-money figure:after{content:url(../images/icones/icon-money.png);}
+.icon-clock figure::after{content:url(../images/icones/icon-clock.png);}
+
